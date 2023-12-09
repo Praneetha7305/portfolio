@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Personal-Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background-color: rgb(3, 2, 2);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(192, 107, 107);
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+      text-decoration: none;
+      color: white;
+}
+nav ul li a:hover{
+      color: rgb(151, 151, 231);
+      font-size: 1.04rem;
+}
+.left{
+    font-size: 2rem;
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstsection >div{
+    width: 40%;
+}
+
+.leftsection{
+    font-size: 3rem;
+}
+
+.rightsection img{
+    width:80%
+}
+.purple{
+    color: aqua;
+}
+#element{
+    color: aqua;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">praneetha's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hii,My name is <span class="purple">Praneetha</span>
+                <div> I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+               <img src="IMG_20231208_050942.png" alt=""
+                  width="200px" height="600px">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Software Developer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+  
